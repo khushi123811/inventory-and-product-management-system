@@ -1,0 +1,101 @@
+/* ================================================= */
+/* MAIN LAYOUT */
+/* ================================================= */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* MAIN CONTENT (Right side area) */
+.content {
+  margin-left: 240px;              /* sidebar width */
+  width: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================================================= */
+/* PAGE CONTAINER */
+/* ================================================= */
+
+.page-container {
+  margin-top: 80px;
+  padding: 20px;
+  padding-left: 0;                 /* IMPORTANT — aligns with title */
+  margin-left: 0;                  /* use .content alignment only */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;          /* left aligned */
+}
+
+
+/* ================================================= */
+/* ADD BUTTON + TABLE ALIGNMENT */
+/* ================================================= */
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;      /* button aligned under S */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Table wrapper aligned under S */
+.table-wrapper {
+  width: 100%;
+}
+
+/* ================================================= */
+/* UNIVERSAL TABLE STYLES */
+/* ================================================= */
+
+.product-table,
+.category-table,
+.supplier-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 6px;
+  background: #fff;
+}
+
+/* Table Header */
+.product-table th,
+.category-table th,
+.supplier-table th{
+  background: #f4f6f8;
+  padding: 16px 26px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Table Body Cells */
+.product-table td,
+.category-table td,
+.supplier-table td {
+  padding: 18px 26px;
+  background: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Hover Row */
+.product-table tr:hover td,
+.category-table tr:hover td,
+.supplier-table tr:hover td{
+  background: #fafafa;
+}
+
+/* Empty Data Row */
+.empty-row {
+  text-align: center;
+  padding: 28px 0;
+  color: #777;
+}
