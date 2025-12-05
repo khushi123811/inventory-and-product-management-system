@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 
 const Navbar = ({ page }) => {
   // UPDATED TITLE
-  const title = "Inventory and Employee Management System";
+  const title = "Inventory and Product Management System";
 
   return (
     <AppBar
